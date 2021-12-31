@@ -4,24 +4,32 @@ import java.util.Scanner;
 
 public class AccountTest {
     public static void main(String[] args) {
+        Account firstAccount = new Account("Judith",12000);
+        Account secondAccount = new Account("Deborah",3000);
+displayAccount(firstAccount,secondAccount);
         Scanner input = new Scanner(System.in);
-        Account judithAccount = new Account("Judith",1000000);
-        displayAmount(judithAccount);
-        System.out.println("Enter deposit Amount: ");
-        double deposit = input.nextDouble();
-        judithAccount.deposit(deposit);
-        System.out.printf("Adding %.2f to the balance%n",deposit);
-       displayAmount(judithAccount);
-        System.out.println("Enter withdrawal amount: ");
-        double withdrawal = input.nextDouble();
-        System.out.printf("Removing %.2f from the balance%n", withdrawal);
-        judithAccount.withdrawal(withdrawal);
-        displayAmount(judithAccount);
-    }
+        System.out.print("Enter deposit amount for first Account: ");
+        double depositAmount = input.nextDouble();
+        System.out.printf("%n adding %.2f to firstAccount balance%n%n",depositAmount);
+        firstAccount.deposit(depositAmount);
+        displayAccount(firstAccount,secondAccount);
+        System.out.println("Enter withdrawal amount for first account");
+       double withdrawAmount = input.nextDouble();
+        firstAccount.withdraw(withdrawAmount);
+        displayAccount(firstAccount,secondAccount);
+        System.out.print("Enter deposit amount for second Account");
+        depositAmount = input.nextDouble();
+        System.out.printf("%n adding %.2f to  second Account balance%n%n",depositAmount);
+        secondAccount.deposit(depositAmount);
+        displayAccount(firstAccount,secondAccount);
 
-    public static void displayAmount(Account judithAccount){
-        System.out.printf("%s Balance: %.2f%n",judithAccount.getName(),judithAccount.getBalance());
     }
+public static void displayAccount (Account firstAccount, Account secondAccount){
+    System.out.printf("%s balance: $%.2f%n",firstAccount.getName(),firstAccount.getBalance());
+    System.out.printf("%s balance: $%.2f%n", secondAccount.getName(),secondAccount.getBalance());
+}
+
+
 
 
 }

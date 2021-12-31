@@ -3,39 +3,33 @@ package chapterThree;
 public class Account {
     private String name;
     private double balance;
+
     public Account(String name, double balance){
-      this.name = name;
+        this.name =name;
 
-        this.balance= balance;
-    }
-
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getBalance() {
-        return balance;
-    }
-
-    public void deposit(double deposit) {
-        balance = balance + deposit;
-        this.balance = balance;
-    }
-
-    public  void withdrawal(double withdrawal){
-        if (withdrawal > balance){
-           this.balance = balance;
-            System.out.println("Withdrawal Amount Exceeded Account Balance");
-        }
-        else {
-            balance = balance - withdrawal;
+        if (balance > 0.00){
             this.balance = balance;
         }
-
     }
+public void deposit (double depositAmount){
+        if(depositAmount > 0.0){
+            balance = depositAmount + balance;
+        }
+}
+public double getBalance (){
+        return balance;
+}
+public void setName (String name){
+        this.name = name;
+}
+public String getName(){
+        return name;
+}
+public void withdraw (double withdrawalAmount){
+        if(withdrawalAmount > balance){
+            System.out.println("Withdrawal Amount exceeded account balance");
+        }
+}
+
+
 }
