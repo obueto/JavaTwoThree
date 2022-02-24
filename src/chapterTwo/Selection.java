@@ -6,27 +6,27 @@ public class Selection {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println ("Enter first number");
-        int a  =input.nextInt();
+        int firstNumber  =input.nextInt();
 
         System.out.print ("Enter second number");
-        int b = input.nextInt ();
+        int secondNumber = input.nextInt ();
 
 
-        if  (a ==b)
+        if  (firstNumber ==secondNumber)
         {
             System.out.println ( " the numbers are equal to");
         }
 
-        if (a > b)
+        if (firstNumber > secondNumber)
 
         {
-            System.out.println (a +  " is larger");
+            System.out.println (firstNumber +  " is larger");
         }
 
 
-        if (b > a)
+        if (secondNumber > firstNumber)
         {
-            System.out.print (b + " is larger");
+            System.out.print (secondNumber + " is larger");
         }
 
 

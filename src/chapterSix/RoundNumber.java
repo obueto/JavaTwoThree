@@ -4,24 +4,19 @@ import java.util.Scanner;
 
 public class RoundNumber {
     public double setDouble(double number){
-        double num = Math.floor(number + 2.5);
-        return num;
+        return Math.floor(number + 2.5);
     }
     public double setDoubleToTenth(double number){
-        double num = Math.floor(number * 10 + 0.5)/10;
-        return num;
+        return Math.floor(number * 10 + 0.5)/10;
     }
     public double setDoubleToHundredth(double number){
-        double num = Math.floor(number * 100 + 0.5)/100;
-        return num;
+        return Math.floor(number * 100 + 0.5)/100;
     }
 public  double setDoubledToThousandth (double number){
-        double num = Math.floor(number * 1000 + 0.5)/1000;
-        return num;
+    return Math.floor(number * 1000 + 0.5)/1000;
 }
 public  int setDoubleToInteger (int number){
-        int num = (int) (Math.floor(number * 1000 + 0.5)/1000);
-        return  num;
+    return (int) (Math.floor(number * 1000 + 0.5)/1000);
 
 }
     public static void main(String[] args) {

@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class DivisibleNumber {
     public static void main(String[] args) {
         int divide;
-        int three;
 
         Scanner input = new Scanner (System.in);
 
@@ -13,10 +12,11 @@ public class DivisibleNumber {
 
         divide = input.nextInt();
 
-        three = divide % 3;
-
-
-        System.out.println ( divide + " is divisible by 3");
-
-    }
+        if (divide % 3 == 0) {
+            System.out.println(divide + " is divisible by 3");
+        }
+        if ( divide % 3 != 0){
+            System.out.println( divide + " is not divisible by 3");
+        }
+}
 }

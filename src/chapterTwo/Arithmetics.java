@@ -4,55 +4,55 @@ import java.util.Scanner;
 
 public class Arithmetics {
     public static void main(String[] args) {
-        int one;
-        int two;
-        int three;
+        int numberOne;
+        int numberTwo;
+        int numberThree;
 
         Scanner input = new Scanner (System.in);
 
         System.out.println("enter first number");
-        one = input.nextInt();
+        numberOne = input.nextInt();
 
         System.out.println("enter second number");
-        two = input.nextInt();
+        numberTwo = input.nextInt();
 
         System.out.println("enter third number");
-        three = input.nextInt();
+        numberThree = input.nextInt();
 
-        int product  =  one* two* three;
-        int sum = one + two + three;
-        int average = one*two*three/3;
+        int product  =  numberOne* numberTwo* numberThree;
+        int sum = numberOne + numberTwo + numberThree;
+        int average = numberOne*numberTwo*numberThree/3;
 
         System.out.printf("sum is %d%n", sum);
         System.out.printf("average is %d%n", average);
         System.out.printf("product is %d%n", product);
 
-        if (one > two & one >three){
-            System.out.printf("%d is the largest%n", one);
+        if (numberOne > numberTwo && numberOne >numberThree){
+            System.out.printf("%d is the largest%n", numberOne);
         }
 
 
 
-        if (two > one & two >three){
-            System.out.printf("%d is the largest%n", two);
+        if (numberTwo > numberOne && numberTwo >numberThree){
+            System.out.printf("%d is the largest%n", numberTwo);
         }
 
-        if (three > one & three >two){
-            System.out.printf("%d is the largest%n", three);
+        if (numberThree > numberOne && numberThree >numberTwo){
+            System.out.printf("%d is the largest%n", numberThree);
             }
 
-        if (one < two & one <three){
-            System.out.printf("The smallest is %d%n",one);
+        if (numberOne < numberTwo && numberOne <numberThree){
+            System.out.printf("The smallest is %d%n",numberOne);
         }
 
-        if (two < one & two <three){
-            System.out.printf("The smallest is %d%n",two);
+        if (numberTwo < numberOne && numberTwo <numberThree){
+            System.out.printf("The smallest is %d%n",numberTwo);
         }
 
 
 
-        if (three <one & three <two){
-            System.out.printf("The smallest is %d%n",three);
+        if (numberThree <numberOne && numberThree <numberTwo){
+            System.out.printf("The smallest is %d%n",numberThree);
         }
 
 

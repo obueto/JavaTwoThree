@@ -30,8 +30,9 @@ public class AutomaticBikeTest {
             suzuki.accelerate(1);
         }
 
-//        suzuki.getSpeed();
-        assertEquals(34,suzuki.getSpeed());
+
+       suzuki.getSpeed();
+        assertEquals(38,suzuki.getSpeed());
 
 
     }

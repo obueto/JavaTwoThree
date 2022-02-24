@@ -4,63 +4,63 @@ import java.util.Scanner;
 
 public class TwoNumbers {
     public static void main(String[] args) {
-        int first;
-        int second;
-        int third;
-        int fourth;
-        int fifth;
+        int firstNumber;
+        int secondNumber;
+        int thirdNumber;
+        int fourthNumber;
+        int fifthNumber;
         int largeNumber = 0;
         int smallNumber = 0  ;
 
         Scanner input = new Scanner (System.in);
 
-        System.out.print("Enter first Number");
-        first = input.nextInt();
+        System.out.print("Enter firstNumber Number");
+        firstNumber = input.nextInt();
 
-        System.out.print("Enter second Number");
-        second = input.nextInt();
+        System.out.print("Enter secondNumber Number");
+        secondNumber = input.nextInt();
 
-        System.out.print("Enter third Number");
-        third = input.nextInt();
+        System.out.print("Enter thirdNumber Number");
+        thirdNumber = input.nextInt();
 
-        System.out.print("Enter fourth Number");
-        fourth = input.nextInt();
+        System.out.print("Enter fourthNumber Number");
+        fourthNumber = input.nextInt();
 
-        System.out.print("Enter fifth Number");
-        fifth = input.nextInt();
+        System.out.print("Enter fifthNumber Number");
+        fifthNumber = input.nextInt();
 
-        if (first > largeNumber){
-            largeNumber = first;}
+        if (firstNumber > largeNumber){
+            largeNumber = firstNumber;}
 
-        if (second > largeNumber){
-            largeNumber = second;}
+        if (secondNumber > largeNumber){
+            largeNumber = secondNumber;}
 
-        if (third > largeNumber){
-            largeNumber = third;}
+        if (thirdNumber > largeNumber){
+            largeNumber = thirdNumber;}
 
-        if (fourth > largeNumber){
-            largeNumber = fourth;}
+        if (fourthNumber > largeNumber){
+            largeNumber = fourthNumber;}
 
 
-        if (fifth > largeNumber){
-            largeNumber = fifth;}
+        if (fifthNumber > largeNumber){
+            largeNumber = fifthNumber;}
 
         System.out.println("The largest number is  "+ largeNumber);
 
-        if (first < second & first < third & first < fourth & first < fifth ){
-            smallNumber = first;}
+        if (firstNumber < secondNumber & firstNumber < thirdNumber & firstNumber < fourthNumber & firstNumber < fifthNumber ){
+            smallNumber = firstNumber;}
 
-        if (second < first & second < third & second < fourth & first < fifth ){
-            smallNumber = second;}
+        if (secondNumber < firstNumber & secondNumber < thirdNumber & secondNumber < fourthNumber & firstNumber < fifthNumber ){
+            smallNumber = secondNumber;}
 
-        if (third < first & third < second & third < fourth & third < fifth ){
-            smallNumber = third;}
+        if (thirdNumber < firstNumber & thirdNumber < secondNumber & thirdNumber < fourthNumber & thirdNumber < fifthNumber ){
+            smallNumber = thirdNumber;}
 
-        if (fourth < first & fourth < second & fourth < third & fourth < fifth ){
-            smallNumber = fourth;}
+        if (fourthNumber < firstNumber & fourthNumber < secondNumber & fourthNumber < thirdNumber & fourthNumber < fifthNumber ){
+            smallNumber = fourthNumber;}
 
-        if (fifth < first  & fifth < second & fifth < third & fifth < fourth ){
-            smallNumber = fifth;}
+        if (fifthNumber < firstNumber  & fifthNumber < secondNumber & fifthNumber < thirdNumber & fifthNumber < fourthNumber ){
+            smallNumber = fifthNumber;}
 
         System.out.print("The smallest number is "+ smallNumber);
 

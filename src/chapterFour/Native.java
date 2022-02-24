@@ -37,10 +37,10 @@ public class Native {
 
         int count = 0;
         System.out.println("the factors are ");
-        for (int num = 1; num <= number; num++) {
-            if (number % num == 0) {
-                count++;
-                System.out.print(num + " ");
+        for (int factor = 1; factor <= number; factor++) {
+            if (number % factor == 0) {
+                factor++;
+                System.out.print(factor + " ");
 
             }
         }

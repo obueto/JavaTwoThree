@@ -52,6 +52,7 @@ public class AutomaticBike {
         if (speed >= 0 && speed <= 20){
             gear = 1;
         }
+
         return speed;
     }
 
@@ -71,7 +72,6 @@ public class AutomaticBike {
 }
 
     public void setGear() {
-        this.speed = speed;
         if (speed >= 0 & speed <= 20){
             gear = 1;
         }

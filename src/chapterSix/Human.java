@@ -21,12 +21,8 @@ public class Human {
         return gender;
     }
 
-    public void setGender(Gender gender) {
-        this.gender = gender;
-    }
-
     public  String toString (){
-            String woman = "";
+            String woman;
             woman = "Human Name: " + getName() + " Human Gender: " + getGender();
             return woman;
     }

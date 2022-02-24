@@ -13,14 +13,11 @@ public class Clock {
         }
         this.hour = hour;
         if (minutes > 59){
-            hour = 0;
             minutes = 0;
             seconds = 0;
         }
         this.minutes = minutes;
         if (seconds > 59){
-            hour = 0;
-            minutes = 0;
             seconds = 0;
         }
         this.seconds = seconds;

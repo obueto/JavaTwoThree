@@ -1,73 +1,44 @@
 package chapterFour;
 
-import java.util.Scanner;
-
 public class DaysOfChristmas {
     public static void main(String[] args) {
-        String days = """
-                First day of Christmas  Press 1
-                Second day of Christmas Press 2
-                Third day of Christmas Press 3
-                Fourth day of Christmas Press 4
-                Fifth day of Christmas Press 5
-                Sixth day of Christmas Press 6
-                Seventh day of Christmas Press 7
-                Eight day of Christmas Press 8
-                Ninth day of Christmas Press 9
-                Tenth day of Christmas Press 10
-                Eleventh day of Christmas Press 11
-                Twelfth day of Christmas Press 12
-                """;
-        System.out.println(days);
-       Scanner input = new Scanner(System.in);
-      int userInput = input.nextInt();
-     switch (userInput) {
-         case 1:
-            System.out.println("On the first day of Christmas");
-             System.out.println("My true love sent to me");
-             System.out.println("A partridge in a pear tree");
-             break;
-         case 2:
-             System.out.println("On the second day of Christmas");
-             System.out.println("My true love sent to me");
-             System.out.println("Two turtle doves and");
-             System.out.println("Press 1");
-             int secondDay = input.nextInt();
-             switch (secondDay){
-                 case 1:
-                     System.out.println("A partridge in a pear tree");
-             }
-             break;
-         case 3:
-             System.out.println("On the Third day of Christmas");
-             System.out.println("My true love sent to me");
-             System.out.println("Three french hens");
-             System.out.println("Press 1");
-             int thirdDay = input.nextInt();
-             switch (thirdDay){
-                 case 1:
-                     System.out.println("Two turtle doves and");
-                     System.out.println("A partridge in a pear tree");
+        for (int i = 1; i <=12; i++) {
+            switch (i) {
+                case 1 -> System.out.println("On the first day ");
+                case 2 -> System.out.println("On the second day");
+                case 3 -> System.out.println("On the third day");
+                case 4 -> System.out.println("On the fourth day");
+                case 5 -> System.out.println("On the fifth day");
+                case 6 -> System.out.println("On the sixth day");
+                case 7 -> System.out.println("On the seventh day");
+                case 8 -> System.out.println("On the eighth day");
+                case 9 -> System.out.println("On the ninth day");
+                case 10 -> System.out.println("On the tenth day");
+                case 11 -> System.out.println("On the eleventh day");
+                case 12 -> System.out.println("On the twelfth day");
+            }
+            //System.out.println(i);
+            System.out.println("of christmas my true love sent to me");
 
-             }
-             break;
-         case 4:
-             System.out.println("On the Fourth day of Christmas");
-             System.out.println("My true love sent to me");
-             System.out.println("Four colling birds ");
-             System.out.println("Press 1");
-             int fourthDay = input.nextInt();
-             switch (fourthDay){
-                 case 1:
-                     System.out.println("Three french hens");
-                     System.out.println("Two turtle doves and");
-                     System.out.println("A partridge in a pear tree");
-
-             }
-             break;
-         case 5:
+            for (int j = i; j > 0; j-- ){
+                switch (j) {
+                    case 1 -> System.out.println("a partridge in a pear tree");
+                    case 2 -> System.out.println("two turtle doves");
+                    case 3 -> System.out.println("three french hens");
+                    case 4 -> System.out.println("four colly birds");
+                    case 5 -> System.out.println("five calling birds");
+                    case 6 -> System.out.println("six geese are laying");
+                    case 7 -> System.out.println("seven swans are swimming");
+                    case 8 -> System.out.println("eight maids are milking");
+                    case 9 -> System.out.println("nine drummers drumming");
+                    case 10 -> System.out.println("ten pipers pipping");
+                    case 11 -> System.out.println("eleven ladies dancing");
+                    case 12 -> System.out.println("twelve lords are leaping");
+                }
+            }
+            System.out.println("----".repeat(10));
+            System.out.println();
+        }
 
     }
-
-}
 }

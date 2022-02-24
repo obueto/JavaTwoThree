@@ -1,8 +1,8 @@
-//package chapterFour;
-//
-//import java.util.Scanner;
-//
-//public class MobilePhones {
+package chapterFour;
+
+import java.util.Scanner;
+
+public class MobilePhones {
 //    public static void main(String[] args) {
 //        Scanner
 //        String option = """
@@ -217,5 +217,5 @@
 //        }
 //
 //    }
-//}
-//
+}
+

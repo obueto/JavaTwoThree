@@ -10,7 +10,6 @@ public class Car {
      this.year = year;
      if (price < 0.0) {
          price = 0;
-         this.price = price;
      }
      this.price= price ;
     }
@@ -38,7 +37,6 @@ public class Car {
     public void setPrice(double price) {
         if (price < 0){
             price = 0;
-            this.price = price;
         }
         this.price = price;
     }
