@@ -1,6 +1,6 @@
 package chapterNine.employee;
 
-public class HourlyEmployee extends Employee {
+public class    HourlyEmployee extends Employee {
     private double hours;
     private double hourlyWage;
 
